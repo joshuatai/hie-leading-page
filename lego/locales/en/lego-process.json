@@ -1,0 +1,9 @@
+{
+  "flowType": {
+    "design": "REQUIREMENT+DESIGN",
+    "implement": "IMPLEMENTION",
+    "testing": "TESTING",
+    "postRelease" : "POST-RELEASE"
+  }
+}
+  

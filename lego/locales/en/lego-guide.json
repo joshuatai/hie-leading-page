@@ -1,0 +1,42 @@
+{
+  "levrageInfo": {
+    "title": "LEGO for Effective \n UX Development",
+    "desc": "LEGO stands for LEverage and GO! Our goal is to deliver consistent, efficient, and modern UI design. In addition to Style Refreshment, UI Flow Redesign, and User Behavior Tracking, the LEGO project offers a centralized repository for Trenders to leverage and contribute UI components during development.",
+    "reminder": "Refer to the information below to learn more about leveraging LEGO components for your project."
+  },
+  "flowType": {
+    "design": "DESIGN",
+    "build": "BUILD",
+    "refine": "REFINE"
+  },
+  "preview": [
+    {
+      "id": "uxGuide",
+      "title": "UX Design Guidelines",
+      "role": ["UID"],
+      "description": "UI designers can refer to the <link>UX Design Guidelines</link> to provide UI designs for specific user tasks.",
+      "link": "http://tw-hie/ui_standards/category/commercial-cbu-guideline/ui-flow-design/"
+    },
+    {
+      "id": "styleGuide",
+      "title": "Style Guidelines",
+      "role": ["VD", "FED", "UID"],
+      "description": "The <link>Trend Micro Style Portal</link> is an inventory of Trend Micro Commercial UI components, templates, and code guidelines for visual designers and front-end developers.",
+      "link": "http://style-portal/"
+    },
+    {
+      "id": "uiComponent",
+      "title": "UI Component Repository",
+      "role": ["FED", "VD", "UID"],
+      "description": "The <link>Trend Micro Bower</link> is a repository that allows front-end developers to search for packages, which have been used and contributed by project teams. front-end developers can refer to these packages to build new components efficiently.",
+      "link": "http://bower/"
+    },
+    {
+      "id": "ubt",
+      "title": "User Behavior Tracking",
+      "role": ["UID", "PM", "JM", "RD", "QA"],
+      "description": "The <link>User Behavior Tracking Guidelines</link> include processes, templates, and lessons learnt from case studies for PMs, JMs, and UI designers to make informed decisions by defining, collecting, and analyzing quantitative user behavior data.",
+      "link": "http://tw-hie/ui_standards/2017/07/user-behavior-tracking/"
+    }
+  ]
+}

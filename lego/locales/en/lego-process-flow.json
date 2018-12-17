@@ -1,0 +1,187 @@
+{
+  "flows":
+  [
+    {
+      "id": "379735a1-03e2-471e-b179-0cc9a19e8979",
+      "title": "UX Design Guidelines",
+      "type": "uxGuide",
+      "stage": "1",
+      "task": [
+        { 
+          "id": "f23d6bd5-4c01-490a-bb09-b690936a6fc8",
+          "description": "Identify target users, goals, and tasks.", 
+          "role": [
+            "UID", 
+            "PM", 
+            "JM"
+          ],
+          "delivery": ""
+        },
+        { 
+          "id": "5d4a9343-3c4d-4215-9d72-f87098c33193",
+          "description": "Reference specific <link>UX design guidelines</link> (if the project scope covers related tasks)", 
+          "role": [
+            "UID", 
+            "PM", 
+            "JM"
+          ],
+          "delivery": "",
+          "link": "http://tw-hie/ui_standards/category/commercial-cbu-guideline/ui-flow-design/"
+        }
+      ]
+    },
+    {
+      "id": "48ff1cc7-f334-4b83-a5a2-0e92acfb97d7",
+      "title": "Style Guidelines",
+      "type": "styleGuide",
+      "stage": "2",
+      "task": [
+        { 
+          "id": "a1bdf449-8b3e-4856-a737-34dab31fa294",
+          "description": "Refer to the <link>Style Portal</link> for component development. HIE will provide the reference links on the UI mockup or visual spec.", 
+          "role": [
+            "FED"
+          ],
+          "delivery": "",
+          "link": "http://style-portal/"
+        }
+      ]
+    },
+    {
+      "id": "d1321ed6-6d32-44a0-bfec-17b20ac4171c",
+      "title": "UI Component Repository",
+      "type": "uiComponent",
+      "stage": "2",
+      "task": [
+        { 
+          "id": "32bc1411-7e07-4a3c-97ca-4e66f109e0c7",
+          "description": "Search <link>Trend Micro Bower</link> (also available by clicking Repository > Bower on the Style Portal) to find components already developed and contributed by other project teams to reuse in your project.", 
+          "role": [
+            "FED"
+          ],
+          "delivery": "",
+          "link": "http://bower/"
+        }
+      ]
+    },
+    {
+      "id": "6421e42a-c0b1-4964-9b8b-751dbfc3cd7c",
+      "title": "UI Component Repository",
+      "type": "uiComponent",
+      "stage": "4",
+      "task": [
+        { 
+          "id": "08b288d0-31ec-4d06-807b-144b74fda0f8",
+          "description": "Contribute UI components to <link>Trend Micro Bower</link>", 
+          "role": [
+              "FED"
+          ],
+          "delivery": "",
+          "link": "http://bower/"
+        }
+      ]
+    },
+    {
+      "id": "fe7d577a-7879-452f-911a-76fa0d612ecc",
+      "title": "User Behavior Tracking",
+      "type": "ubt",
+      "stage": "1",
+      "task": [
+        { 
+          "id": "24d63219-630d-4d0b-a0d6-cac88e05f5cc",
+          "description": "Identify objectives, goals, and needs for quantitative user behavior data based on product backlogs. Refer to the Measurement Plan section in <link>Requirement + Design stage</link>  to create a measurement plan.", 
+          "role": [
+            "UID", 
+            "PM", 
+            "JM"
+          ],
+          "delivery": "Measurement Plan",
+          "link": "http://tw-hie/ui_standards/2017/07/user-behavior-tracking/#requirement-+-design-stage"
+        },
+        { 
+          "id": "44205b2d-dfa8-4194-92c1-b7180150ebaa",
+          "description": "Define and review specifications for user behavior tracking. Refer to UBT specification examples in <link>Requirement + Design stage</link> to create detailed specifications for tracked items.", 
+          "role": [
+            "UID",  
+            "JM",
+            "RD",
+            "QA"
+          ],
+          "delivery": "Detailed specifications for tracked items",
+          "link": "http://tw-hie/ui_standards/2017/07/user-behavior-tracking/#requirement-+-design-stage"
+        }
+      ]
+    },
+    {
+      "id": "c498c4ea-2221-4113-bbea-927c8fd09e45",
+      "title": "User Behavior Tracking",
+      "type": "ubt",
+      "stage": "2",
+      "task": [
+        { 
+          "id": "370964ce-16ab-46f5-b8b7-3e62e90416f5",
+          "description": "Design and implement user tracking and data collection in projects (via BIF Connect or other channels). Refer to <link>Implementation and Testing Stage</link> for code examples.", 
+          "role": [
+            "FED"
+          ],
+          "delivery": "",
+          "link": "http://tw-hie/ui_standards/2017/07/user-behavior-tracking/#implementation-and-testing-stage "
+        }
+      ]
+    },
+    {
+      "id": "02899ba9-e132-42da-a6e5-71b621b6b4e9",
+      "title": "User Behavior Tracking",
+      "type": "ubt",
+      "stage": "3",
+      "task": [
+        { 
+          "id": "be3c83a2-49a3-4627-8fe4-76b42acd5778",
+          "description": "Functional test: Check whether data can be successfully sent to Trend Micro", 
+          "role": [
+            "QA"
+          ],
+          "delivery": ""
+        },
+        { 
+          "id": "bdbdb4c7-4ad9-4f38-b4ec-256e06fa84f7",
+          "description": "Use case test: Check whether specific use cases result in the corresponding data", 
+          "role": [
+            "UID",
+            "QA"
+          ],
+          "delivery": ""
+        }
+      ]
+    },
+    {
+      "id": "ac5b79e3-7a8a-48d4-87c8-0b856cd4aed8",
+      "title": "User Behavior Tracking",
+      "type": "ubt",
+      "stage": "4",
+      "task": [
+        { 
+          "id": "85f29f2a-7cc0-4ccd-9162-dee4a74a2efb",
+          "description": "Analyze and review tracking results. Refer to <link>Post-Release Stage (Anaysis Stage)</link> to generate a UBT report.", 
+          "role": [
+            "UID", 
+            "PM", 
+            "JM"
+          ],
+          "delivery": "UBT Report",
+          "link": "http://tw-hie/ui_standards/2017/07/user-behavior-tracking/#post-release-stage-(analysis-stage)"
+        },
+        { 
+          "id": "eb1544c4-6436-4c90-867b-41cc8adb92a6",
+          "description": "Propose design enhancements based on collected data", 
+          "role": [
+            "UID"
+          ],
+          "delivery": "Design Proposal"
+        }
+      ]
+    }
+  ]
+}
+
+
