@@ -1,256 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Commercial UI Community</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>UX Guideline | Trend Micro Human Interface Engineering</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	
-    <!-- Le styles -->
-    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="docs/assets/css/docs.css" rel="stylesheet">
-    <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="docs/assets/css/docs-responsive.css" rel="stylesheet">
-    <link href="docs/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-    
-    
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/logo-apple-touch-icon-144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/logo-apple-touch-icon-114.png">
-       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/logo-apple-touch-icon-72.png">
-                     <!--link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"-->
-                                                            <link rel="shortcut icon" href="docs/assets/ico/logo_32.png">
-<style>
-.commercial-theme {
-  font-size: 12px;
-  background: #e8e8e8;
-}
-.main-content { 
-  margin: 50px auto;  
-}   
-.span6 {
-  padding: 0 50px;
-}
-@media (max-width: 767px) {
-  .main-content { 
-    margin: 20px auto 0;  
-  }
-  .span6 {
-    padding: 10px;
-  }
-  .span6 + .span6 {
-    margin-top: 40px;
-  }
-} 
-@media (max-width: 480px) {
-  .main-content { 
-    margin: 20px auto 0;  
-  }
-  .span6 {
-    padding: 0;
-  }
-}
-
-.commercial-theme .thumbnail {
-  border: 1px solid #999999;
-  background: white;
-}
-.thumbnails ul {
-  list-style: disc;
-  margin-bottom: 10px;
-}
-/* Footer
--------------------------------------------------- */
-.footer {  
-  text-align: center;
-  padding: 5px 0;
-  border-top: 1px solid #e0e0e0;
-  background-color: #ededed;
-  background-image: -moz-linear-gradient(top, #f5f5f5, #ededed);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#ededed));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #ededed); 
-  background-image: -o-linear-gradient(top, #f5f5f5, #ededed);
-  background-image: linear-gradient(to bottom, #f5f5f5, #ededed);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed', GradientType=0);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.footer p {
-  margin-bottom: 0;
-  color: #777;
-}
-.footer-links {
-  margin: 10px 0;
-}
-.footer-links li {
-  display: inline;
-  padding: 0 2px;
-}
-.footer-links li:first-child {
-  padding-left: 0;
-}
-.thumbnail + h4{
-  margin-top: 10px;
-}
-</style>
-</head>
-
-<body class="commercial-theme">
-  <!-- Navbar
-  ================================================== -->
-  <div class="tm-navbar tm-navbar-static-top">
-    <div class="tm-nav-banner">
-      <div class="tm-container">
-        <div class="tm-brand">
-          <a href="index.html"><img src="docs/assets/img/product_banner.png"/><h4>Commercial UI Community</h4></a>         
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet" media="screen">    
+    <!--link href="lib/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"-->
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <style> 
+      body {
+        min-width: 1280px;
+        background: url(img/graphy.png) repeat center -5px;    
+      }
+      .commercial-theme .tm-container {
+        width: 1060px;
+        padding-left: 80px;
+        padding-right: 80px;
+        posidtion: relative;
+      }
+      .commercial-theme .span4 {
+        width: 340px;
+      }
+      #banner {       
+        background-attachment: fixed;
+        height: 350px;
+        background: url(img/img_banner.png) repeat center top #252525;     
+      }    
+      #banner .tm-container {
+        padding-top: 56px;
+      } 
+      #banner .tm-container .tm-brand {
+        background: url(img/img_hie_red.png) no-repeat center center; 
+        height: 60px;
+      }   
+      #header-content {
+        width: 660px;
+        margin: 15px auto;
+        border-top: 1px dashed #777;
+        border-bottom: 1px dashed #777;
+      }      
+      #header-content h1{
+        clear: both;
+        font-family: "Interstate-Light",Arial,"Helvetica Neue",Helvetica,sans-serif;
+        letter-spacing: -2.32px;
+        line-height: 70px;
+        font-size: 58px;
+        color: #fff;
+        margin: 0 auto;
+      }      
+      #header-content p {
+        color: #e7e7e7;
+        font-size: 14px;        
+      }
+      #main-wrapper {  
+        margin-top: 24px;
+      }
+      #features .row {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      #features section {
+        width: 280px;
+        min-height: 160px;
+      }
+      #features h4 {
+        border-bottom: 2px solid #222;        
+        padding-bottom: 6px;
+      }
+      #features ul {
+        margin-top: 15px;
+      }
+      #features ul a {
+        font-size: 14px;
+        line-height: 22px;
+        color: #222;
+      }
+      #features ul a:hover {
+        color: #e62d2d;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body class="commercial-theme">
+    <div class="tm-wrap">
+      <!-- Header -->    
+      <header id="banner">
+        <!-- Banner -->
+        <div class="tm-container">      
+          <div class="tm-brand"></div>
+          <div id="header-content">
+            <h1>User Experience Guidelines</h1>
+            <p>Welcome to UX Guideline 3.0, a consolidation of former Enterprise UI Standards, Endpoint UI Standards, UI Standards for Web Services (formally known as SB UI Standards or Worry-free UI Standards), and Consumer UX Design Guidelines.</p>
+          </div>          
+        </div>          
+      </header>
+      <!-- Main -->
+      <div id="main-wrapper">      
+        <!-- Features -->
+        <div id="features">
+          <div class="tm-container">
+            <div class="row">
+              <div class="span4">
+                <section>
+                  <h4>Consumer Designs</h4>
+                  <ul class="unstyled">
+                    <!--i><a href="ui_standards/category/consumer/end-point-guideline/" target="_blank">Endpoint Design Guidelines</a></li-->
+                    <!--li><a href="ui_standards/category/consumer/mobile-guideline/" target="_blank">Mobile Guideline</a></li>
+                    <!--li><a href="ui_standards/category/hiddencate/end-point-guideline/" target="_blank">Endpoint Design Guideline</a></li-->
+                    <li><a href="ui_standards/category/consumer/consumer-icon-design-guidelines/" target="_blank">Icon Design Guidelines</a></li>
+                    <li><a href="ui_standards/category/consumer/consumer-web-design-guidelines/" target="_blank">Web Design Guidelines</a></li>
+                    <li><a href="ui_standards/category/consumer/consumer-mobile-design-guidelines/" target="_blank">Mobile Design Guidelines</a></li>
+                    <li><a href="http://tw-hiesrv.tw.trendnet.org/www_server/uiwww/segment/03_consumer/ui_patterns" target="_blank">Style Guide - Online Samples</a></li>
+                    <!--li><a href="http://tw-hie/ui_standards/category/consumer/web-guideline/" target="_blank">Product Web UI Design Guideline</a></li-->
+                    <!--li><a href="http://tw.ishare2.trendmicro.com/sites/hie/volume/Projects/Visual%20Guideline/2013%20Consumer%20Visual%20Guideline%20and%20Spec/-%20Product%20Icon%20-/01-Guideline/Consumer_Icon_Design_Guidelines_1.0.pdf" target="_blank">Product Icon Design Guideline(PDF)</a></li-->
+                    <!--li><a href="http://tw-hiesrv.tw.trendnet.org/www_server/uiwww/segment/03_consumer/ui_patterns" target="_blank">Styleguide - Online Sample</a></li-->
+                    <li><a href="https://gitlab.tw.trendnet.org/randy_lien/trend-branding-styleguide" target="_blank">Style Guide - Source Code</a></li>
+                  </ul>
+                </section>							
+              </div>
+              <div class="span4">
+                <section>
+                  <h4>Commercial Designs</h4>
+                  <ul class="unstyled">
+                    <li><a href="http://tw-hie/lego/#/" target="_blank">LEGO</a></li>
+                    <li><a href="ui_standards/category/commercial-cbu-guideline/interactions/" target="_blank">Component Design</a></li>
+                    <li><a href="ui_standards/category/commercial-cbu-guideline/template-design/" target="_blank">Template Design</a></li>
+                    <li><a href="ui_standards/category/commercial-cbu-guideline/ui-flow-design/" target="_blank">Task Flow Design</a></li>
+                    <!--li><a href="ui_standards/category/commercial-cbu-guideline/visuals/" target="_blank">Visual Design</a></li-->
+                    <li><a href="http://style-portal.tw.trendnet.org/" target="_blank">Style Portal</a></li>
+                    <li><a href="http://commercial-ui.tw.trendnet.org/commercial-bootstrap/" target="_blank">Commercial Bootstrap</a></li>
+                    <!--li><a href="#" target="_blank">Third-party License Information(TBD)</a></li>
+                    <li><a href="#" target="_blank">Data Visualization(TBD)</a></li-->
+                  </ul>
+                </section>							
+              </div>
+              <div class="span4">
+                <section>
+                  <h4>Core Tech Designs</h4>
+                  <ul class="unstyled">
+                    <li><a href="ux_guideline/" target="_blank">Design Principle</a></li>
+                    <!--li><a href="ui_standards/category/core-tech/" target="_blank">CoreTech Tools Guideline</a></li-->
+                    <li><a href="http://tw.ishare2.trendmicro.com/sites/hie/CoreTech/Lists/Project%20HIE%20owner/UXGuidelines.aspx" target="_blank">CoreTech Module Guideline</a></li>
+                    <!--li><a href="http://tw-hie/ux_guideline/category/amsp/" target="_blank">AMSP</a></li>
+                    <li><a href="http://tw-hie/ux_guideline/category/atse/" target="_blank">ATSE</a></li>
+                    <li><a href="http://tw-hie/ux_guideline/category/ccca/" target="_blank">CCCA</a></li>
+                    <li><a href="http://tw-hie/ux_guideline/2014/01/ccca-5-notification/" target="_blank">C&C Notifications</a></li>
+                    <li><a href="http://tw-hie/ux_guideline/category/dlp-integration/" target="_blank">DLP Integration</a></li>
+                    <li><a href="http://tw-hie/ux_guideline/category/crypto/" target="_blank">Email Encryption(Crypto)</a></li>
+                    <li><a href="http://tw-hie/ux_guideline/category/tools/" target="_blank">House Call Tool</a></li-->
+                  </ul>
+                </section>							
+              </div>             
+            </div> 
+            <div class="row">
+              <div class="span4">
+                <section>
+                  <h4>Cross-CBU</h4>
+                  <ul class="unstyled">
+                    <li><a href="ui_standards/2013/12/third-party-license-information/" target="_blank">Third-party License Information</a></li>
+                    <li><a href="ui_standards/2010/08/layout-considerations/" target="_blank">Localization</a></li>                  
+                  </ul>
+                </section>							
+              </div>
+              <div class="span4">
+                <section>
+                  <h4>UX Research</h4>
+                  <ul class="unstyled">
+                    <li><a href="ui_standards/category/ux-research/methodology/" target="_blank">Methodology</a></li>                  
+                    <!--li><a href="2013/12/end-to-end-testing/" target="_blank">End-to-End Testing</a></li>                  
+                    <li><a href="2013/12/enterprise-product-user-experience-map-practice/"target="_blank">Enterprise Product User Experience Map Practice</a></li>                  
+                    <li><a href="2013/12/x-team-research/" target="_blank">X-Team Research</a></li-->                  
+                  </ul>
+                </section>							
+              </div>
+              <div class="span4">
+                <section>
+                  <h4>Writer</h4>
+                  <ul class="unstyled">
+                    <li><a href="http://tw.ishare2.trendmicro.com/sites/hie/Writer/HIE%20Style%20Guide/Style%20Standard%20Documents%20(Current)/CIS.pdf" target="_blank">Writing Style Guide(CIS)</a></li>
+                    <li><a href="http://tw.ishare2.trendmicro.com/sites/hie/Writer/HIE%20Style%20Guide/Style%20Standard%20Documents%20(Current)/Microsoft%20Manual%20of%20Style.pdf" target="_blank">Microsoft Manual of Style</a></li>
+                    <li><a href="http://tw.ishare2.trendmicro.com/sites/hie/Writer/Terminology/Lists/Terminology%20List/AllItems.aspx" target="_blank">Terminology List</a></li>
+                    <li><a href="http://tw.ishare2.trendmicro.com/sites/hie/Writer/Terminology/Lists/Components/AllItems.aspx" target="_blank">Component List</a></li>
+                  </ul>
+                </section>							
+              </div>             
+            </div> 
+          </div> 
         </div>
-      </div>
+      </div>    
+    </div>						
+		<!-- Footer -->
+			<!--div id="footer-wrapper">
+				<footer class="container" id="site-footer">
+					<div class="row">
+						<div class="3u">
+							<section class="first">
+								<h2>Ipsum et phasellus</h2>
+								<ul class="link-list">
+									<li><a href="#">Mattis et quis rutrum sed accumsan</a>
+									<li><a href="#">Suspendisse amet varius nibh</a>
+									<li><a href="#">Suspenddapibus amet mattis quis</a>
+									<li><a href="#">Rutrum accumsan eu varius</a>
+									<li><a href="#">Nibh lorem sed dolore et ipsum.</a>
+								</ul>
+							</section>
+						</div>
+						<div class="3u">
+							<section>
+								<h2>Lorem mattis dolor</h2>
+								<ul class="link-list">
+									<li><a href="#">Duis neque nisi dapibus sed</a>
+									<li><a href="#">Suspenddapibus amet mattis quis</a>
+									<li><a href="#">Rutrum accumsan eu varius</a>
+									<li><a href="#">Nibh lorem sed dolore et ipsum.</a>
+									<li><a href="#">Mattis et quis rutrum sed accumsan</a>
+								</ul>
+							</section>
+						</div>
+						<div class="3u">
+							<section>
+								<h2>Mattis quis tempus</h2>
+								<ul class="link-list">
+									<li><a href="#">Suspendisse amet varius nibh</a>
+									<li><a href="#">Suspenddapibus amet mattis quis</a>
+									<li><a href="#">Rutrum accumsan eu varius</a>
+									<li><a href="#">Nibh lorem sed dolore et ipsum.</a>
+									<li><a href="#">Duis neque nisi dapibus sed</a>
+								</ul>
+							</section>
+						</div>
+						<div class="3u">
+							<section class="last">
+								<h2>Odio et phasellus</h2>
+								<ul class="link-list">
+									<li><a href="#">Rutrum accumsan eu varius</a>
+									<li><a href="#">Nibh lorem sed dolore et ipsum.</a>
+									<li><a href="#">Duis neque nisi dapibus sed</a>
+									<li><a href="#">Mattis et quis rutrum sed accumsan</a>
+									<li><a href="#">Suspendisse amet varius nibh</a>
+								</ul>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<div class="divider"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a> | Images: <a href="http://fotogrph.com">fotogrph</a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div-->
     </div>
-  </div>
-<div class="tm-container main-content">
-  <!-- Docs nav
-  ================================================== -->
-  <div class="row">    
-    <div class="span12">
-      <!-- Templates
-      ================================================== -->            
-      <!--h2>Move beyond the base template with the top 50 layouts for Trend Micro specific. We encourage folks to iterate on these layouts for your project.</h2-->
-      <div class="row-fluid">        
-        <ul class="thumbnails">
-          <li class="span6">
-            <a class="thumbnail" href="http://tw.ishare2.trendmicro.com/sites/WF/WF30/SitePages/Policy%20Management%20Integration%20SDK.aspx" target="_blank">
-              <img src="docs/assets/img/WGF_805x450.png" alt="WidgetFramework Wiki">
-            </a>
-            <h4><a href="http://tw.ishare2.trendmicro.com/sites/WF/WF30/SitePages/Policy%20Management%20Integration%20SDK.aspx" target="_blank">Widget Framework</a></h4>          
-            <p><b>Dashboard:</b> The Dashboard can visual display information of product status & reports.</p>            
-            <!--p>
-              <ul>
-                <li>
-                  Operational Monitor:
-                  <ol>
-                    <li>Track core processes, metrics, and status</li>
-                    <li>Low-level information at-a-glance used for real-time monitoring</li>
-                  </ol>
-                </li>
-                <li>
-                  Tactical:
-                  <ol>
-                    <li>Analyze exception conditions and summarizes data for root case analysis</li>
-                    <li>Target : Manager / Supervisors</li>
-                  </ol>
-                </li>
-                <li>
-                  Strategic Monitor:
-                  <ol>
-                    <li>Monitor the execution of strategic objectives</li>
-                    <li>Target: CISO/CSO/other executives</li>
-                  </ol>
-                </li>
-              </ul>    
-            </p-->
-            <p><b>Policy Integration:</b> Widget Framework also contain the next generation policy management platform for Trend Micro.</p>
-            <p><b><a href="http://commercial-ui.tw.trendnet.org/commercial-bootstrap/getting-started.html#widgetframework" target="_blank">How to adopt Commercial Bootstrap with WidgetFramework</a></b></p>
-            <p>
-              <address>
-                <strong>Contact window:</strong><br>                
-                Fanny Wang<br>
-                Phone extension:</abbr> #2042
-              </address>
-            </p>
-          </li>            
-          <li class="span6">
-            <a class="thumbnail" href="http://commercial-ui.tw.trendnet.org/commercial-bootstrap/" target="_blank">
-              <img src="docs/assets/img/commercial-bootstrap-webstie.png" alt="Commercial Bootstrap">
-            </a>
-            <h4><a href="http://commercial-ui.tw.trendnet.org/commercial-bootstrap/" target="_blank">Commercial Bootstrap</a></h4>
-            <p>Commercial Bootstrap provides a powerful front-end framework with new technology that includes HTML5, CSS3 and JavaScript</p>
-            <p>The Bootstrap is also compatible with non-supported (HTML5/CSS3) browsers. Visual and UI standards are included in the Bootstrap as well. The JavaScript (not Java) plugins are secure because they run on the client and are completely separated from the server.</p>
-            <p>Commercial Bootstrap makes it faster and easier to create web UIs.</p>
-            <p>
-              <address>
-                <strong>Contact window:</strong><br>                
-                Joshua Tai<br>
-                Phone extension:</abbr> #1819
-              </address>
-            </p>
-          </li>            
-        </ul>
-        <ul class="thumbnails">
-          <li class="span6">
-            <a class="thumbnail" href="http://bower.tw.trendnet.org" target="_blank">
-              <img src="http://bower.tw.trendnet.org/assets/snapshot/snapshot.png" alt="Trend Micro Private Bower">
-            </a>
-            <h4><a href="http://bower.tw.trendnet.org" target="_blank">Trend Micro Private Bower</a></h4>
-            <p>Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you.</p>
-            <p>Private Bower can manage Trend Micro's components that contain HTML, CSS, JavaScript, fonts or even image files and adopt visual/UI standards . Bower doesn’t concatenate or minify code or do anything else - it just installs the right versions of the packages you need and their dependencies.</p>
-            <p>
-              <address>
-                <strong>Contact window:</strong><br>                
-                Joshua Tai<br>
-                Phone extension:</abbr> #1819
-              </address>
-            </p>
-          </li> 
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="footer">
-      <div class="tm-container">
-        <!--p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p-->
-        <!--p>Copyright &copy; 2012 Trend Micro Incorporated. All rights reserved.</p-->
-        <ul class="footer-links">
-          <li><a href="http://tw.ishare2.trendmicro.com/sites/hie/SitePages/Home.aspx" target="_blank">Global HIE</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="http://tw-hie/ui_standards/" target="_blank">UX Guideline</a></li>          
-
-          <li class="muted">&middot;</li>
-          <li><a href="https://gitlab.tw.trendnet.org/trend_bootstrap_commercial/issues?state=open" target="_blank">Issues</a></li>          
-          <!--li class="muted">&middot;</li>
-          <li><a href="http://lesscss.org" target="_blank">LESS CSS</a></li-->          
-        </ul>
-      </div>
-    </footer>
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <!--script src="assets/js/jquery.js"></script-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- Analytics
-    ================================================== -->
-    <script>
-      /*
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-      */
-    </script>
+    <script src="lib/js/jquery.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
   </body>
 </html>
